@@ -302,7 +302,7 @@ a {
 
 @media (max-width: 830px) {
     .help-container {
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .help-text {
