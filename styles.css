@@ -249,6 +249,10 @@ a {
     .about-media button, p {
         margin-top: 15px;
     }
+
+    .about-image {
+        width: 130px;
+    }
 }
 
 .help-me {
