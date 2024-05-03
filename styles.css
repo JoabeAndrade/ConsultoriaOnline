@@ -17,8 +17,21 @@ a {
 }
 
 .header {
-    background-color: #191919;
+    background-color: #120f10;
     padding-inline: 16px;
+    transition: top 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#header.show-header {
+    top: 0;
+}
+  
+#header.hide-header {
+    top: -100px;
 }
 
 .nav {
@@ -224,6 +237,12 @@ a {
 }
 
 @media (max-width: 560px) {
+    .about-me {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    
     .about{
         max-width: 300px;
     }
@@ -295,8 +314,8 @@ a {
 }
 
 .card-img {
-    height: 300px;
-    width: 240px;
+    height: 400px;
+    width: 320px;
     cursor: pointer;
     cursor: pointer;
     transition: 0.3s, color 0.3s, transform 0.3s;
@@ -309,6 +328,33 @@ a {
 .card-text {
     text-align: center;
     color: #ffffff;
+}
+
+@media (max-width: 980px) {
+     .help-me {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card-image {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card-img {
+        width: 300px;
+        height: 350px;
+        margin-bottom: 10px;
+    }
+
+    .card-conatiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 
 @media (max-width: 830px) {
@@ -341,8 +387,6 @@ a {
         height: 350px;
         margin-bottom: 10px;
     }
-
-    .card-img
 
     .card-conatiner {
         display: flex;
